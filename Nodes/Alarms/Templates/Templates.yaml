@@ -1,0 +1,76 @@
+Name: Templates
+Type: FolderType
+Children:
+- Name: DigitalAlarm_withMessage
+  Id: g=c8d3eaec2cff6fad0acb84845bba7c84
+  Supertype: ExclusiveLevelAlarmController
+  Children:
+  - Class: Reference
+    Target: ns=11;i=81
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=82
+    Direction: Forward
+  - Class: Reference
+    Target: ns=11;i=83
+    Direction: Forward
+  - Name: InputValue
+    Type: BaseDataVariableType
+    DataType: Double
+    Value: 0.0
+  - Name: LastEvent
+    Type: BaseDataVariableType
+    DataType: BaseDataType
+    ValueRank: OneDimension
+    ArrayDimensions: [0]
+  - Name: HighLimit
+    Type: BaseDataVariableType
+    DataType: Double
+    ModellingRule: Optional
+    Value: 50.0
+  - Name: AutoAcknowledge
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: AutoConfirm
+    Type: BaseDataVariableType
+    DataType: Boolean
+    ModellingRule: Optional
+    Value: true
+  - Name: Message
+    Type: BaseDataVariableType
+    DataType: LocalizedText
+    Value: {"LocaleId":"en-US","Text":"Message for Alarm4"}
+    Children:
+    - Name: StringFormatter1
+      Type: StringFormatter
+      Children:
+      - Name: Format
+        Type: BaseDataVariableType
+        DataType: LocalizedText
+        ReferenceType: HasParameter
+        Value: {"NamespaceIndex":20,"TextId":"Warning! Variable value = {0}"}
+      - Name: ns=3;Source0
+        Type: BaseDataVariableType
+        DataType: BaseDataType
+        ReferenceType: HasSource
+        Children:
+        - Name: DynamicLink
+          Type: DynamicLink
+          DataType: NodePath
+          Value: "../../../InputValue"
+          Children:
+          - Name: IsPull
+            Type: BaseVariableType
+            DataType: Boolean
+            Value: true
+      - Name: IsPull
+        Type: PropertyType
+        DataType: Boolean
+        ReferenceType: HasComponent
+        ModellingRule: Optional
+        Value: true
+  - Class: Reference
+    Type: GeneratesEvent
+    Target: g=da45d41131fa0617608b24fb0a8d4f06

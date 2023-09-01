@@ -1,0 +1,23 @@
+Name: Basic
+Type: FolderType
+Children:
+- Name: Variable1
+  Id: g=8ddfc41a42e4ae73c4a62b312ca4b61b
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable2
+  Id: g=f277665924019e9008d1facda3d0b34d
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable3
+  Id: g=ad4eaf72b76701ff80bbaae246c529c2
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable4
+  Id: g=bc8802008a11b35d3ed0e7319e2872b1
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

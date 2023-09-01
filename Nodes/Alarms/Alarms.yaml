@@ -1,0 +1,6 @@
+Name: Alarms
+Type: AlarmsCategoryFolder
+Children:
+- File: Basic/Basic.yaml
+- File: WithValue/WithValue.yaml
+- File: Templates/Templates.yaml

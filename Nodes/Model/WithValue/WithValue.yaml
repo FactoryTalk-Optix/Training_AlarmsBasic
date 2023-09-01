@@ -1,0 +1,13 @@
+Name: WithValue
+Type: FolderType
+Children:
+- Name: Variable5
+  Id: g=287da4934b68b0ee2b7f19ed7aa9b6f9
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0
+- Name: Variable6
+  Id: g=006dd9a8e939768f337cfa170b4ebf0d
+  Type: BaseDataVariableType
+  DataType: Int32
+  Value: 0

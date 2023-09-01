@@ -1,0 +1,5 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- File: Basic/Basic.yaml
+- File: WithValue/WithValue.yaml
